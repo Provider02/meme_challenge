@@ -2,7 +2,7 @@
 
 ## Detekcia antisociálneho správania v multimodálnych vstupných dátach
 
-Tento repozitár bolo vytvorené ako súčasť bakalárskej práce na tému Detekcia antisociálneho správania v multimodálnych vstupných dátach (2024). Obsahom tohto repozitára je využívaný kód modelu ISSUES, ktorého zameraním je funkcia klasifikovania mémov ako nenávistných alebo neškodných. Model ISSUES reprodukujeme a vizualizujeme pre porovnanie v plnení úlohy s online dostupnými LLMs. Model ISSUES bol nami len prevzatý, pričom vznikol vrámci práce [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) a je dostupný prostredníctvom príslušného repozitára (https://github.com/miccunifi/ISSUES).
+Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detekcia antisociálneho správania v multimodálnych vstupných dátach (2024). Obsahom tohto repozitára je využívaný kód modelu ISSUES, ktorého zameraním je funkcia klasifikovania mémov ako nenávistných alebo neškodných podľa ich sémantického kontextu popisu a obrázka. Model ISSUES reprodukujeme a vizualizujeme pre porovnanie v plnení úlohy s online dostupnými LLMs. Model ISSUES bol nami len prevzatý, pričom vznikol vrámci práce [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) a je dostupný prostredníctvom príslušného repozitára (https://github.com/miccunifi/ISSUES).
 
 
 ### Abstrakt práce
