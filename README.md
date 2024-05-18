@@ -1,15 +1,13 @@
-# Meme klasifikácia modelom ISSUES
-
-## Detekcia antisociálneho správania v multimodálnych vstupných dátach
+# Detekcia antisociálneho správania v multimodálnych vstupných dátach
 
 Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detekcia antisociálneho správania v multimodálnych vstupných dátach (2024). Obsahom tohto repozitára je využívaný kód modelu ISSUES, ktorého zameraním je funkcia klasifikovania mémov ako nenávistných alebo neškodných podľa ich sémantického kontextu popisu a obrázka. Model ISSUES reprodukujeme a vizualizujeme pre porovnanie v plnení úlohy s online dostupnými LLMs. Model ISSUES bol nami len prevzatý, pričom vznikol vrámci práce [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) a je dostupný prostredníctvom príslušného repozitára (https://github.com/miccunifi/ISSUES).
 
 
-### Abstrakt práce
+## Abstrakt práce
 Multimodálny obsah v podobe mémov sa stal behom posledných desaťročí jednou z dominantných a rýchlo rastúcich foriem dát dostupných online. Takýto obsah sa ale nemusí vždy zhodovať s politikami a pravidlami sociálnych sietí a iných stránok, na ktorých je zverejňovaný a musí tak byť moderovaný. V tejto práci sa zaoberáme automatickým posudzovaním nenávistného charakteru mémov, prostredníctvom na túto úlohu trénovaných modelov hlbokého učenia. Okrem podania teoretického pohľadu na problematiku a replikovania spomínaných modelov, posudzujeme aj možnosť využitia veľkých jazykových modelov pre túto úlohu.
 
 
-### Príprava prostredia a kódu
+## Príprava prostredia a kódu
 Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie prostredníctvom platformy Google Colab & Google Drive.
 
 1. Prevzatie / Stiahnutie
@@ -105,7 +103,7 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
    Blok ' Weights & Biases setup' obsahuje 1 cell, ktorý prepojí používateľov Wandb účet.
 
 
-### Použitie modelu
+## Použitie modelu
 
 Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostrednítvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb'.
 
@@ -120,7 +118,7 @@ Pre trénovanie modelu je potrebné vykonať tieto zmeny:
 *  --pretrained_model ' '
 
 
-### Popis arguemtov
+## Popis arguemtov
 
 #### Hlavné
 - ```dataset``` - názov datasetu: [hmc / harmeme]
@@ -153,14 +151,14 @@ Pre trénovanie modelu je potrebné vykonať tieto zmeny:
 - ```phi_freeze``` - označenie, či sa má zmraziť predtrénovaná phi sieť 
 
 
-### Vizualizácia modelu
+## Vizualizácia modelu
 
 Vizualizácia modelu, v podobe akú sme ju vytvorili, predstavuje zobrazenie náhodného mému zo sady testovacíh príkladov spolu s jeho predikovaným a skutočným zaradením. Takáto vizualizácia bola vytvorená pre obe datasety HMC a HarMeme, pričom využíva už predtrénovaný model, trénovaný na danom dataste, ako aj u reprodukcie výsledkov modelu. Vizualizácia je takisto dostupná v súbore 'visualization.ipynb' v bloku označenom ako 'Visualization'. Po prejdení do potrebného priečinka je možné spustiť kód pre vizualizáciu, rozdelený do troch častí, osobitne pre oba datasety HMC a HarMeme.
 
 
-### Autor
+## Autor
 * [**Jakub Paranič**](https://github.com/Provider02)
 
 
-### Uznanie
+## Uznanie
 Naša práca využíva nami len prevzatý, nie vyvíjaný, model [**ISSUES**](https://github.com/miccunifi/ISSUES).
