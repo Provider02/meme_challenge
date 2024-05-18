@@ -107,7 +107,7 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
 
 ### Použitie modelu
 
-Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostrednítvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb.
+Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostrednítvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb'.
 
 Pre zopakovanie výsledkov trénovania podľa [**pôvodným autorom**](https://github.com/LorenzoAgnolucci) poskytnutého checkpointu, nie je nutné vykonanie žiadnej zmeny.
 * tag " --reproduce t "
@@ -155,7 +155,7 @@ Pre trénovanie modelu je potrebné vykonať tieto zmeny:
 
 ### Vizualizácia modelu
 
-
+Vizualizácia modelu, v podobe akú sme ju vytvorili, predstavuje zobrazenie náhodného mému zo sady testovacíh príkladov spolu s jeho predikovaným a skutočným zaradením. Takáto vizualizácia bola vytvorená pre obe datasety HMC a HarMeme, pričom využíva už predtrénovaný model, trénovaný na danom dataste, ako aj u reprodukcie výsledkov modelu. Vizualizácia je takisto dostupná v súbore 'visualization.ipynb' v bloku označenom ako 'Visualization'. Po prejdení do potrebného priečinka je možné spustiť kód pre vizualizáciu, rozdelený do troch častí, osobitne pre oba datasety HMC a HarMeme.
 
 
 ### Autor
