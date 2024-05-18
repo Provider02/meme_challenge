@@ -1,4 +1,4 @@
-# meme_challenge
+# Meme klasifikácia modelom ISSUES
 
 ## Detekcia antisociálneho správania v multimodálnych vstupných dátach
 
