@@ -9,7 +9,7 @@ Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detek
 Multimodálny obsah v podobe mémov sa stal behom posledných desaťročí jednou z dominantných a rýchlo rastúcich foriem dát dostupných online. Takýto obsah sa ale nemusí vždy zhodovať s politikami a pravidlami sociálnych sietí a iných stránok, na ktorých je zverejňovaný a musí tak byť moderovaný. V tejto práci sa zaoberáme automatickým posudzovaním nenávistného charakteru mémov, prostredníctvom na túto úlohu trénovaných modelov hlbokého učenia. Okrem podania teoretického pohľadu na problematiku a replikovania spomínaných modelov, posudzujeme aj možnosť využitia veľkých jazykových modelov pre túto úlohu.
 
 
-### Príprava prostredia a kódu
+<summary><h3>Príprava prostredia a kódu</h3></summary>
 Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie prostredníctvom platformy Google Colab & Google Drive.
 
 1. Prevzatie / Stiahnutie
@@ -86,9 +86,9 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
   
 6. Upravte súbor visualization.ipynb
 
-   Podobne aj v tomto súbore je potrebné upraviť správne cesty v častiach kódu označneých komentármi:
+   Nastavte svoju cestu koreňového priečinka, a to na mieste označenom komentárom:
    <pre>
-   !!! ACTION REQUIRED !!! - update path
+   !!! ACTION REQUIRED !!! - update path to your root folder
    </pre>
 
    Potrebné aj je dosadenie API KEY účtu Wandb pre jeho využitie, a to na mieste označenom komentárom:
@@ -98,7 +98,7 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
 
 7. Spustenie bloku 'Enviroment setup'
 
-   Blok ' Enviroment setup' obsahuje 4 cells, ktoré pripoja Google Drive a nainštalujú potrebné požiadavky.
+   Blok ' Enviroment setup' obsahuje 5 cells, ktoré pripoja Google Drive, nastavia cestu koreňového priečinka a nainštalujú potrebné požiadavky.
    
 8. Spustenie bloku 'Weights & Biases setup'
 
