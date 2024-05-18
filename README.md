@@ -1,6 +1,6 @@
 # Detekcia antisociálneho správania v multimodálnych vstupných dátach
 
-Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detekcia antisociálneho správania v multimodálnych vstupných dátach (2024). Obsahom tohto repozitára je využívaný kód modelu ISSUES, ktorého zameraním je funkcia klasifikovania mémov ako nenávistných alebo neškodných podľa ich sémantického kontextu popisu a obrázka. Model ISSUES reprodukujeme a vizualizujeme pre porovnanie v plnení úlohy s online dostupnými LLMs. Model ISSUES bol nami len prevzatý, pričom vznikol vrámci práce [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) a je dostupný prostredníctvom príslušného repozitára (https://github.com/miccunifi/ISSUES).
+Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detekcia antisociálneho správania v multimodálnych vstupných dátach (2024). Obsahom tohto repozitára je využívaný kód modelu ISSUES, ktorého zameraním je funkcia klasifikovania mémov ako nenávistných alebo neškodných podľa ich sémantického kontextu popisu a obrázka. Model ISSUES reprodukujeme a vizualizujeme pre porovnanie v plnení úlohy s online dostupnými veľkými jazykovými modelmi (LLMs). Model ISSUES bol nami len prevzatý, pričom vznikol vrámci práce [paper](https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html) a je dostupný prostredníctvom príslušného repozitára (https://github.com/miccunifi/ISSUES).
 
 
 ## Abstrakt práce
@@ -80,7 +80,7 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
    <pre>
    !!! ACTION REQUIRED !!! - update path
    </pre>
-   V týchto častiach kódu je potrebné upraviť cestu k súborom podľa usporiadania priečinkou používateľa na Google Dirve, teda nahraďit časť 'YOUR_PATH' správnou cestou.
+   V týchto častiach kódu je potrebné upraviť cestu k súborom podľa usporiadania priečinkov používateľa na Google Dirve, teda nahraďit časť 'YOUR_PATH' správnou cestou.
   
 6. Upravte súbor visualization.ipynb
 
@@ -105,7 +105,7 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
 
 ## Použitie modelu
 
-Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostrednítvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb'.
+Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostredníctvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb'.
 
 Pre zopakovanie výsledkov trénovania podľa [**pôvodným autorom**](https://github.com/LorenzoAgnolucci) poskytnutého checkpointu, nie je nutné vykonanie žiadnej zmeny.
 * tag " --reproduce t "
@@ -118,7 +118,7 @@ Pre trénovanie modelu je potrebné vykonať tieto zmeny:
 *  --pretrained_model ' '
 
 
-## Popis arguemtov
+## Popis argumentov
 
 #### Hlavné
 - ```dataset``` - názov datasetu: [hmc / harmeme]
@@ -153,7 +153,7 @@ Pre trénovanie modelu je potrebné vykonať tieto zmeny:
 
 ## Vizualizácia modelu
 
-Vizualizácia modelu, v podobe akú sme ju vytvorili, predstavuje zobrazenie náhodného mému zo sady testovacíh príkladov spolu s jeho predikovaným a skutočným zaradením. Takáto vizualizácia bola vytvorená pre obe datasety HMC a HarMeme, pričom využíva už predtrénovaný model, trénovaný na danom dataste, ako aj u reprodukcie výsledkov modelu. Vizualizácia je takisto dostupná v súbore 'visualization.ipynb' v bloku označenom ako 'Visualization'. Po prejdení do potrebného priečinka je možné spustiť kód pre vizualizáciu, rozdelený do troch častí, osobitne pre oba datasety HMC a HarMeme.
+Vizualizácia modelu, v podobe akú sme ju vytvorili, predstavuje zobrazenie náhodného mému zo sady testovacích príkladov spolu s jeho predikovaným a skutočným zaradením. Takáto vizualizácia bola vytvorená pre obe datasety HMC a HarMeme, pričom využíva už predtrénovaný model, trénovaný na danom dataste, ako aj u reprodukcie výsledkov modelu. Vizualizácia je takisto dostupná v súbore 'visualization.ipynb' v bloku označenom ako 'Visualization'. Po prejdení do potrebného priečinka je možné spustiť kód pre vizualizáciu, rozdelený do troch častí, osobitne pre oba datasety HMC a HarMeme.
 
 
 ## Autor
