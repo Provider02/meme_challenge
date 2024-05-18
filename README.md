@@ -9,7 +9,7 @@ Tento repozitár bol vytvorený ako súčasť bakalárskej práce na tému Detek
 Multimodálny obsah v podobe mémov sa stal behom posledných desaťročí jednou z dominantných a rýchlo rastúcich foriem dát dostupných online. Takýto obsah sa ale nemusí vždy zhodovať s politikami a pravidlami sociálnych sietí a iných stránok, na ktorých je zverejňovaný a musí tak byť moderovaný. V tejto práci sa zaoberáme automatickým posudzovaním nenávistného charakteru mémov, prostredníctvom na túto úlohu trénovaných modelov hlbokého učenia. Okrem podania teoretického pohľadu na problematiku a replikovania spomínaných modelov, posudzujeme aj možnosť využitia veľkých jazykových modelov pre túto úlohu.
 
 
-<summary><h3>Príprava prostredia a kódu</h3></summary>
+### Príprava prostredia a kódu
 Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie prostredníctvom platformy Google Colab & Google Drive.
 
 1. Prevzatie / Stiahnutie
@@ -107,7 +107,50 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
 
 ### Použitie modelu
 
+Model je možné použiť na oboch datasetoch HMC aj HarMeme, prostrednítvom spustenia kódu v časti 'Usage of model on HMC and HarMeme datasets' vo 'visualization.ipynb.
 
+Pre zopakovanie výsledkov trénovania podľa [**pôvodným autorom**](https://github.com/LorenzoAgnolucci) poskytnutého checkpointu, nie je nutné vykonanie žiadnej zmeny.
+* tag " --reproduce t "
+* tag " --pretrained_proj_weights t "
+* --pretrained_model 'hmc_text-inv-comb_best.ckpt' / --pretrained_model 'harmeme_text-inv-comb_best.ckpt'
+
+Pre trénovanie modelu je potrebné vykonať tieto zmeny:
+* tag " --reproduce f "
+* tag " --pretrained_proj_weights f "
+*  --pretrained_model ' '
+
+
+### Popis arguemtov
+
+#### Hlavné
+- ```dataset``` - názov datasetu: [hmc / harmeme]
+- ```num_mapping_layers``` -  počet projekčných vrstiev na mapovanie CLIP funkcií v úlohovo orientovanom latentnom priestore
+- ```num_pre_output_layers``` - počet MLP skrytých vrstiev na vykonanie konečnej klasifikácie
+- ```max_epochs``` - maximálny počet epoch
+- ```lr``` - miera učenia
+- ```batch_size``` - veľkosť dávky
+- ```fast_process``` - označenie, či sa majú ako vstup modelu používať predpočítané funkcie CLIP namiesto ich výpočtu počas procesu trénovania
+- ```name``` - názov modelu
+- ```pretrained_model``` - názov kontrolného bodu predtrénovaného modelu v priečinku 'pretrained_models'
+- ```reproduce``` - označenie, či sa má vykonať proces trénovania nasledovaný fázou hodnotenia (f) alebo priamo hodnotiť predtrénovaný model na testovacích údajoch (t)
+
+#### Všeobecné
+- ```map_dim``` - výstupná dimenzia projektovaných funkčných vektorov
+- ```fusion``` - fúzna metóda medzi textovými a vizuálnymi modalitami: [concat / align]
+- ```pretrained_proj_weights``` - označenie, či sa majú používať predtrénované projekčné váhy
+- ```freeze_proj_layers``` - označenie, či sa majú zmraziť predtrénované váhy
+
+#### Combiner Architektúra
+- ```comb_proj``` - označenie, či sa majú projektovať vstupné funkcie
+- ```comb_fusion``` - fúzna metóda na kombinovanie vstupných funkcií
+- ```convex_tensor``` - označenie, či sa má ako výstup konvexnej kombinácie vypočítať tenzor alebo skalár
+
+#### Architektúra textovej inverzie
+- ```text_inv_proj``` - označenie, či sa má použiť projekcia textového enkodéra CLIP
+- ```phi_inv_proj``` - označenie, či sa má projektovať výstup phi siete
+- ```post_inv_proj``` - označenie, či sa majú projektovať výstupné funkcie textového enkodéra CLIP
+- ```enh_text``` - označenie, či sa má použiť prompt iba s pseudo-slovom alebo pripojiť text meme
+- ```phi_freeze``` - označenie, či sa má zmraziť predtrénovaná phi sieť 
 
 
 ### Vizualizácia modelu
@@ -120,4 +163,4 @@ Kód obsiahnutý v tomto repozitári bol použitý a je vhodný na použitie pro
 
 
 ### Uznanie
-Naša práca využíva model [**ISSUES**](https://github.com/miccunifi/ISSUES).
+Naša práca využíva nami len prevzatý, nie vyvíjaný, model [**ISSUES**](https://github.com/miccunifi/ISSUES).
